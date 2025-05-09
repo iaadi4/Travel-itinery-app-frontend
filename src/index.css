@@ -4,12 +4,12 @@
 
 @custom-variant dark (&:is(.dark *));
 
-
-
 @theme inline {
   --font-montserrat: 'Montserrat', sans-serif;
+  --font-moderniz: 'Moderniz', sans-serif;
   --color-white: #f5f5f5;
   --color-blue: #3643FB;
+  --color-red: #FF7339;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -123,4 +123,12 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+@font-face {
+  font-family: 'Moderniz';
+  src: url('/fonts/Moderniz.otf') format('otf');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
